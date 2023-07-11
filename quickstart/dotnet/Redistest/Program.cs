@@ -26,10 +26,10 @@ namespace Redistest
 
         static async Task Main(string[] args)
         {
-            _redisConnection = await RedisConnection.InitializeAsync(connectionString: ConfigurationManager.AppSettings["CacheConnection"].ToString());
+            _redisConnection = await RedisConnection.InitializeAsync(connectionString: ConfigurationManager.AppSettings[""].ToString());
 
             try
-            {
+            {SRAV.redis.cache.windows.net:6380,password=4aHuDeTjorlpTpC0AOUfruij41iSBLQkJAzCaGJ9KfE=,ssl=True,abortConnect=False
                 // Perform cache operations using the cache object...
                 Console.WriteLine("Running... Press any key to quit.");
 
